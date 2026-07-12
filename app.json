@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Adventure Trip Planner",
+    "slug": "adventure-trip-planner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "adventuretripplanner",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ijse.adventuretripplanner",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Adventure Trip Planner uses your location to save trip destination coordinates and show them on the map.",
+        "NSCameraUsageDescription": "Adventure Trip Planner uses the camera to capture photos for your trip gallery.",
+        "NSPhotoLibraryUsageDescription": "Adventure Trip Planner needs access to your photo library to upload trip photos."
+      }
+    },
+    "android": {
+      "package": "com.ijse.adventuretripplanner",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-splash-screen",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Adventure Trip Planner uses your location to save trip destination coordinates and show them on the map."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Adventure Trip Planner needs access to your photo library to upload trip photos.",
+          "cameraPermission": "Adventure Trip Planner uses the camera to capture photos for your trip gallery."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#1B4332"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
