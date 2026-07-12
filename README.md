@@ -11,6 +11,9 @@ hiking, camping, cycling, road trips, mountain and beach adventures — all in o
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-3DDC84)](#building-a-release-apk)
 [![License](https://img.shields.io/badge/License-Academic%20Coursework-lightgrey)](#license)
 
+**[⬇ Download the Android APK](https://github.com/Hashini1234/AMD_FinalCourseWork_AdventureTripPlanner-/releases/download/v1.0.0/adventure-trip-planner.apk)**
+(from the [v1.0.0 Release](https://github.com/Hashini1234/AMD_FinalCourseWork_AdventureTripPlanner-/releases/tag/v1.0.0))
+
 Final examination project for **ITS 2127 – Advanced Mobile Developer**
 Graduate Diploma in Software Engineering · IJSE
 
@@ -280,6 +283,9 @@ removes its related equipment, expenses, and photos.
 
 ## Building a Release APK
 
+A built APK is already published as a [GitHub Release](https://github.com/Hashini1234/AMD_FinalCourseWork_AdventureTripPlanner-/releases/tag/v1.0.0)
+for submission — see the download link at the top of this README. To build a fresh one yourself:
+
 This project builds via [EAS Build](https://docs.expo.dev/build/introduction/), configured with
 three profiles in `eas.json`:
 
@@ -296,8 +302,8 @@ eas build --platform android --profile preview
 ```
 
 Download the finished `.apk` from the link EAS prints, or from your
-[expo.dev dashboard](https://expo.dev/) → **Builds**. Either sideload it onto a device or share
-the link directly as part of the submission.
+[expo.dev dashboard](https://expo.dev/) → **Builds**. Either sideload it onto a device, share the
+link directly, or attach it to a GitHub Release as done here.
 
 ## Requirement Mapping
 
